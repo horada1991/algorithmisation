@@ -7,16 +7,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Give me a number: ");
+//        int userInput = scanner.nextInt();
 
-        System.out.print("Give me a number: ");
-        int userInput = scanner.nextInt();
+        HashMap<String, Integer> result = OddsEvensCounter.counter3();
+        System.out.println("Even numbers: " + result.get("evens"));
+        System.out.println("Odd numbers: " + result.get("odds"));
+        System.out.println("Odd numbers sum: " + result.get("sumOdds"));
 
-//        HashMap<String, Integer> result = OddsEvensCounter.counter2(userInput);
-//        System.out.println("Even numbers: " + result.get("evens"));
-//        System.out.println("Odd numbers: " + result.get("odds"));
-//        System.out.println("Odd numbers sum: " + result.get("sumOdds"));
-
-        System.out.println(DigitsHandler.summingDigits(userInput));
+//        System.out.println(DigitsHandler.summingDigits(userInput));
     }
 }
